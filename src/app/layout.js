@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
-import Head from "next/head";
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -17,17 +16,17 @@ export const metadata = {
     "Study Anywhere",
     "Modern Skills",
   ],
-  metadataBase: new URL("https://lexoration.com"),
+  metadataBase: new URL("https://lexoration-671824829377.asia-southeast1.run.app"),
   openGraph: {
     title: "Lexoration | Learn Online with Confidence",
     description:
       "Empower your career with flexible, expert-designed courses tailored to your goals.",
-    url: "https://lexoration.com",
+    url: "https://lexoration-671824829377.asia-southeast1.run.app",
     siteName: "Lexoration",
     type: "website",
     images: [
       {
-        url: "https://www.roseofyork.com/wp-content/uploads/2020/12/online-study.jpg",
+        url: "https://lexoration-671824829377.asia-southeast1.run.app/LogoLXRT%201.png", // ← เปลี่ยนให้เป็น full URL
         width: 1200,
         height: 630,
         alt: "Lexoration Online Study",
@@ -58,13 +57,13 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <Head>
-        {/* ✅ ใส่ Google Site Verification ที่นี่ */}
+      <head>
+        {/* ✅ Google Search Console */}
         <meta
           name="google-site-verification"
           content="EMpAGfBmYyZxr5qdZubQREjkt3FkPWPhB0dQacMjJfM"
         />
-      </Head>
+      </head>
       <body className="antialiased bg-white text-gray-900 min-h-screen">
         {children}
       </body>
