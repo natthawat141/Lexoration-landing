@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -57,6 +58,13 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <Head>
+        {/* ✅ ใส่ Google Site Verification ที่นี่ */}
+        <meta
+          name="google-site-verification"
+          content="EMpAGfBmYyZxr5qdZubQREjkt3FkPWPhB0dQacMjJfM"
+        />
+      </Head>
       <body className="antialiased bg-white text-gray-900 min-h-screen">
         {children}
       </body>
