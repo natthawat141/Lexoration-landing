@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+  "node": "20.x"
+},
   "dependencies": {
     "framer-motion": "^12.7.4",
     "next": "15.3.1",
@@ -25,4 +28,5 @@
     "eslint-config-next": "15.3.1",
     "tailwindcss": "^4"
   }
+  
 }
